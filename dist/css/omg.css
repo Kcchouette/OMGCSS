@@ -8,31 +8,45 @@ header{margin-bottom:30px}
 body{margin:0}
 body.omgcontainer,section.omgcontainer,div.omgcontainer{margin:0 auto;width:80%}
 body.omgcontainer90,section.omgcontainer90,div.omgcontainer90{margin:0 auto;width:90%}
+.fixed730{margin:0 auto;width:90%;max-width:730px}
 footer{margin-top:3em;font-size:0.8em;padding-top:2em;border-top:1px solid #ccc;padding-bottom:2em}
 .omgcenter{text-align:center}
 .omgtitle{margin-bottom:2em}
 .omgclear{clear:both}
+.omgpullright{float:right;padding-right:1em}
+.omglowerthat{padding-top:4em!important}
+.omglowmargin{margin-top:2em}
+.omginline{display:inline}
+
 /*static menu*/
 .omgfixedtop{position:fixed;border-bottom:1px solid #949494;background-color:#cecece;left:0;top:0;width:100%;padding-bottom:2px}
-.omglowerthat{padding-top:4em!important}
 .omgfixedtop h1{display:inline-block;font-size:larger;padding-left:1em;padding-right:1em}
 .omgfixedtop .omgmenu{display:inline;margin-bottom:0}
 .omgfixedtop .omgmenu ul{display:inline}
+
 /*menu*/
 .omgmenu{line-height:3em;margin-bottom:4em}
 .omgmenu ul{list-style-type:none;margin:0;padding:0;border:0 none}
 .omgmenu ul li{display:inline-block}
 .menubtn{display:none;font-size:1.3em}
+
 @media only screen and (max-width:720px) {
   .omgfixedtop .omgmenu{display:none;margin-bottom:0}
-  .omgmenu ul li{display:block}
-  .omgbtn{width:100%}
-  .menubtn{display:inline-block;float:right;margin:10px}
+  .omgmenu.omginline{display:none}
+  .omgmenu ul li{display:block!important}
+  .omgmenu.omginline ul li{display:block!important}
+  .omgbtn{width:100%!important}
+  .menubtn{display:inline-block!important;float:right!important;margin:10px!important}
+  .omgpullright{float:none!important;padding:0!important}
 }
 @media only screen and (min-width:720px) {
-  .omgfixedtop .omgmenu{display:inline!important;margin-bottom:0}
+  .omgfixedtop .omgmenu{display:inline!important;margin-bottom:0!important}
+  .omgmenu.omginline{display:inline!important}
   .omgmenu ul li{display:inline-block!important}
-  .omgbtn{width:auto}
+  .omgmenu.omginline ul li{display:inline!important}
+  .omgbtn{width:auto!important}
+  .menubtn{display:none!important}
+  .omgpullright{float:right!important;padding-right:1em!important}
 }
 /*links*/
 a:link,a:visited,a:active,a:hover{text-decoration:none;color:#000}
@@ -63,7 +77,6 @@ a:link,a:visited,a:active,a:hover{text-decoration:none;color:#000}
 .omgbtn.omgerr:hover{background-color:#C93510;border-color:#000}
 /*form elements*/
 form{line-height:3em;display:inline}
-form.omgpullright{float:right;padding-right:1em}
 form.omgvertical{display:block;line-height:3em}
 form.omgvertical>textarea,form.omgvertical>button,form.omgvertical>input,form.omgvertical>a{line-height:1.4em}
 input,button,select{background-color:inherit;font-family:inherit;font-size:1em;line-height: inherit;border:1px solid black;vertical-align: middle;white-space: nowrap;padding:5px;margin:0px;height:3em}
@@ -87,7 +100,6 @@ textarea{background-color:inherit;font-family:inherit;font-size:14px;line-height
 
 /*grid system*/
 .omggrid,.omgblock,.omggrid:after,.omgblock:after,.omggrid:before,.omgblock:before{box-sizing:border-box}
-.omggrid{*zoom:1}
 .omggrid:before,.omggrid:after{display:table;content:"";line-height:0}
 .omggrid:after{clear:both}
 .omggrid{list-style-type:none;padding:0;margin:0}

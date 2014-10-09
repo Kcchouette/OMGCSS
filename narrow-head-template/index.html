@@ -7,34 +7,34 @@
     <meta name="description" content="">
     <meta name="author" content="">
 
-    <title>Head Template for omgcss</title>
+    <title>Narrow Head Template for omgcss</title>
 
     <!-- OMGCSS core CSS -->
     <link href="../dist/css/omg.css" rel="stylesheet">
 
   </head>
 
-  <body>
+  <body class="fixed730 omglowmargin">
 
-    <header class="omgfixedtop">
-      <h1><a class="title" href="#">Project name</a></h1>
+    <header>
+      <h1 class="omginline"><a class="omgtitle" href="#">Project name</a></h1>
       <a href="#" onclick="toggleMenu('omgmenu1')" class="menubtn">&#9776;</a>
-      <nav id="omgmenu1" class="omgmenu" style="display:none">
-        <form method="post" name="login" class="omgpullright">
-          <input type="text" name="login" placeholder="Username"/>
-          <input type="password" name="pass" placeholder="Password"/>
-          <input type="submit" class="omgbtn omgokay" value="Login"/>
-        </form>
+      <nav id="omgmenu1" class="omgmenu omginline omgpullright" style="display:none">
+        <ul>
+          <li><a class="omgbtn" href="#home">Home</a></li>
+          <li><a class="omgbtn" href="#about">About</a></li>
+          <li><a class="omgbtn" href="#contact">Contact</a></li>
+        </ul>
       </nav>
     </header>
 
-    <section class="omglowerthat omghead omgcenter">
+    <section class="omghead omgcenter">
       <h1>Hello World, </h1>
-      <p>This document is OMGCSS head template. Use this document as a way to quickly start any new project.<br> All you get is this text and a mostly barebones HTML document.</p>
-      <a href="#" class="omgbtn omgmain">More info &raquo;</a>
+      <p>This document is OMGCSS narrow head template. Use this document as a way to quickly start any new project.<br> All you get is this text and a mostly barebones HTML document.</p>
+      <p class="omgcenter"><a href="#" class="omgbtn omgmain">More info &raquo;</a></p>
     </section>
 
-    <section class="omgcontainer90 omggrid omg3columns">
+    <section class="omgcontainer90 omggrid omg2columns">
       <div class="omgblock">
         <h2>Title 1</h2>
         <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec eget volutpat nibh, ac pellentesque sem. Integer aliquet nunc at commodo tincidunt.</p>
@@ -42,11 +42,6 @@
       </div>
       <div class="omgblock">
         <h2>Title 2</h2>
-        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec eget volutpat nibh, ac pellentesque sem. Integer aliquet nunc at commodo tincidunt.</p>
-        <p><a class="omgbtn" href="#">More info &raquo;</a></p>
-      </div>
-      <div class="omgblock">
-        <h2>Title 3</h2>
         <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec eget volutpat nibh, ac pellentesque sem. Integer aliquet nunc at commodo tincidunt.</p>
         <p><a class="omgbtn" href="#">More info &raquo;</a></p>
       </div>
