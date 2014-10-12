@@ -1,9 +1,6 @@
-/*import fonts */
-@import url("../fonts/Exo2/Exo2.0.css");
-
 /*main structure*/
 html{box-sizing: border-box}
-*,*:before,*:after{box-sizing: inherit;font-family:'Exo2'}
+*,*:before,*:after{box-sizing: inherit}
 header{margin-bottom:30px}
 body{margin:0}
 body.omgcontainer,section.omgcontainer,div.omgcontainer{margin:0 auto;width:80%}

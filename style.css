@@ -1,0 +1,5 @@
+/*import fonts */
+@import url("./fonts/Exo2/Exo2.0.css");
+
+/*main structure*/
+*,*:before,*:after{font-family:'Exo2', sans-serif}
