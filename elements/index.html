@@ -261,16 +261,21 @@
       <a name="forms"></a><h1 class="omglowerthat">Forms</h1>
 
       <div class="omgcontainer90">
+        <h2>Inline Form</h2>
         <form>
           <input type="text" name="omglol" placeholder="Text here">
           <input type="password" name="omgpass" placeholder="password here">
-          <input type="checkbox" value"1">Check me
+          <input type="checkbox" name="check1" value="1"><label for="check1"> Check me</label>
           <input type="button" value="This is a button">
         </form>
+      </div>
+
+      <div class="omgcontainer90 omglowerthat">
+        <h2>Vertical Form</h2>
         <form class="omgvertical">
           <input type="text" name="omglol" placeholder="Text here">
           <input type="password" name="omgpass" placeholder="password here">
-          <input type="checkbox" value"1">Check me
+          <div class="inputgroup"><input type="checkbox" name="check2" value="1"><label for="check2"> Check me</label></div>
           <input type="button" value="This is a button">
         </form>
       </div>
