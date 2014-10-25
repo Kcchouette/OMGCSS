@@ -29,8 +29,13 @@ footer{margin-top:3em;font-size:0.9em;padding-top:2em;border-top:1px solid #ccc;
 .menubtn{display:none;font-size:1.3em}
 
 /*submenu*/
-ul.omgsubmenu{display:none;position:absolute;width:160px!important}
-ul.omgsubmenu li {display:block;float:left;width:100%!important}
+ul.omgsubmenu{display:none;position:absolute;width:160px!important;line-height:1.6em;padding-top:0.5em;padding-left:0.2em}
+ul.omgsubmenu>li>ul.omgsubmenu{padding-top:0.5em;padding-left:0.2em}
+.omgmenu.omginline>ul>li>ul.omgsubmenu{padding-top:0.5em;padding-left:0em}
+.omgmenubar>.omgmenu.omginline>ul>li>ul.omgsubmenu{padding-top:0.5em;padding-left:0.2em}
+.omgmenu.omginline>ul>li>ul.omgsubmenu>li>ul.omgsubmenu{padding-top:0.5em;padding-left:0.2em}
+ul.omgsubmenu>li {display:block;float:left;width:100%!important}
+ul.omgsubmenu>li>a {width:100%!important}
 
 @media only screen and (max-width:720px) {
   .omgmenubar.omgfixedtop .omgmenu{display:none;margin-bottom:0}
