@@ -48,7 +48,17 @@
         <a onclick="toggleMenu('menu1')" class="menubtn">&#9776;</a>
         <nav id="menu1" class="omgmenu omginline" style="display:none">
           <ul>
-            <li><a class="omgbtn">Home</a></li>
+            <li><a class="omgbtn" onclick="toggleMenu('submenu')">Home</a></li>
+            <ul class="omgsubmenu" id="submenu" style="display:none">
+              <li><a class="omgbtn" onclick="toggleMenu('submenu1')">Submenu1</a></li>
+              <ul class="omgsubmenu" id="submenu1" style="display:none">
+                <li><a class="omgbtn">Submenu2</a></li>
+                <li><a class="omgbtn">Submenu3</a></li>
+              </ul>
+              <li><a class="omgbtn">Submenu4</a></li>
+              <li><a class="omgbtn">Submenu5</a></li>
+              <li><a class="omgbtn">Submenu6</a></li>
+            </ul>
           </ul>
           <form name="search" class="omgpullright">
             <input type="text" name="term" placeholder="Enter something here"/>
@@ -64,7 +74,18 @@
         <a onclick="toggleMenu('menu2')" class="menubtn">&#9776;</a>
         <nav id="menu2" class="omgmenu omginline omgpullright" style="display:none">
           <ul>
-            <li><a class="omgbtn omgmain omgactive">Home</a></li>
+            <li><a class="omgbtn omgmain omgactive" id="submenu3_btn" onclick="toggleMenu('submenu3');toggleMenu('submenu3_btn')">Home</a></li>
+            <ul class="omgsubmenu" id="submenu3" style="display:none">
+              <li><a class="omgbtn" onclick="toggleMenu('submenu3');toggleMenu('submenu3_btn')">..</a></li>
+              <li><a class="omgbtn" onclick="toggleMenu('submenu4')">Submenu1</a></li>
+              <ul class="omgsubmenu" id="submenu4" style="display:none">
+                <li><a class="omgbtn">Submenu2</a></li>
+                <li><a class="omgbtn">Submenu3</a></li>
+              </ul>
+              <li><a class="omgbtn">Submenu4</a></li>
+              <li><a class="omgbtn">Submenu5</a></li>
+              <li><a class="omgbtn">Submenu6</a></li>
+            </ul>
             <li><a class="omgbtn">About</a></li>
             <li><a class="omgbtn">Contact</a></li>
           </ul>
