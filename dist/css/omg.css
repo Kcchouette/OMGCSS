@@ -60,6 +60,8 @@ ul.omgsubmenu>li>a {width:100%!important}
 
 @media only screen and (max-width:720px) {
   ul.omgsubmenu{position:static;width:100%}
+  ul.omgsubmenu>li>a{margin-left: 0.4em}
+  ul.omgsubmenu>li>ul.omgsubmenu>li>a{margin-left: 0.8em}
 }
 
 
