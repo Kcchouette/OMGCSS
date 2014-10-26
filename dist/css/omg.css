@@ -84,6 +84,7 @@ a:link,a:visited,a:active,a:hover{text-decoration:none;color:#000}
 .omgmsg.omgerr {background-color:#F3957E;border: 1px solid #C93510;border-left:5px solid #C93510}
 /*head message*/
 .omghead {display:block;padding:1em;text-align:justify;margin:0;background-color:#eee;border: 0px none;font-size:1.5em}
+
 /*buttons*/
 .omgbtn{font-family:inherit;font-size:1em;line-height: 1.6em;background-color:#f5f5f5;display:inline-block;border:1px solid black;padding:10px;height:3em;vertical-align: middle;white-space: nowrap;}
 .omghead .omgbtn{line-height: 2em}
@@ -101,6 +102,21 @@ a:link,a:visited,a:active,a:hover{text-decoration:none;color:#000}
 .omgbtn.omgwarn:hover{background-color:#ffb619;border-color:#000}
 .omgbtn.omgerr{background-color:#F3957E;color:white}
 .omgbtn.omgerr:hover{background-color:#C93510;border-color:#000}
+
+/*button submenus*/
+.omgbtn ul{display:none;position:absolute;width:160px!important;line-height:1.6em;padding-top:0.5em;padding-left:0.2em}
+.omgbtn ul li ul{padding-top:0.5em;padding-left:0.2em}
+.omgbtn ul{padding-top:0.5em;padding-left:0em}
+.omgbtn ul li ul{padding-top:0.5em;padding-left:0.2em}
+.omgbtn ul li {display:block;float:left;width:100%!important}
+.omgbtn ul li a {width:100%!important}
+
+@media only screen and (max-width:720px) {
+  .omgbtn  ul{position:static;width:100%}
+  .omgbtn ul li a{margin-left: 0.8em;width:calc(100% - 0.8em)!important}
+  .omgbtn ul li ul li a{margin-left: 1.6em;width:calc(100% - 1.6em)!important}
+}
+
 /*form elements*/
 form{line-height:3em;display:inline}
 .omgmenu.omginline form{margin-top:0.2em}

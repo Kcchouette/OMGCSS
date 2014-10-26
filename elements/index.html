@@ -15,10 +15,10 @@
 
   </head>
 
-  <body class="omgcontainer90">
+  <body class="omgcontainer90"><a name="top"></a>
 
     <header class="omgmenubar omgfixedtop">
-      <h1><a class="title" href="./index.html">OMGCSS Elements</a></h1>
+      <h1><a class="title" href="#top">OMGCSS Elements</a></h1>
       <a href="#" onclick="toggleMenu('omgmenu1')" class="menubtn">&#9776;</a>
       <nav id="omgmenu1" class="omgmenu" style="display:none">
         <ul>
@@ -107,42 +107,50 @@
         <div class="omggrid omg2columns">
           <div>
             <div class="omgblock">
-              <a class="omgbtn">Button</a>
-              <a class="omgbtn omgactive">Button</a>
-              <a class="omgbtn omgmain">Button</a>
-              <a class="omgbtn omginfo">Button</a>
-              <a class="omgbtn omgokay">Button</a>
-              <a class="omgbtn omgwarn">Button</a>
-              <a class="omgbtn omgerr">Button</a>
+              <a class="omgbtn" onclick="toggleMenu('submenubtn1')">Link &raquo;</a>
+              <ul id="submenubtn1" style="display:none">
+                <li><a class="omgbtn">Submenu1</a></li>
+                <li><a class="omgbtn">Submenu2</a></li>
+              </ul>
+              <a class="omgbtn omgactive">Link</a>
+              <a class="omgbtn omgmain">Link</a>
+              <a class="omgbtn omginfo">Link</a>
+              <a class="omgbtn omgokay">Link</a>
+              <a class="omgbtn omgwarn">Link</a>
+              <a class="omgbtn omgerr">Link</a>
             </div>
             <div class="omgblock">
-              <a class="omgbtn omgrounded">Button</a>
-              <a class="omgbtn omgrounded omgactive">Button</a>
-              <a class="omgbtn omgrounded omgmain">Button</a>
-              <a class="omgbtn omgrounded omginfo">Button</a>
-              <a class="omgbtn omgrounded omgokay">Button</a>
-              <a class="omgbtn omgrounded omgwarn">Button</a>
-              <a class="omgbtn omgrounded omgerr">Button</a>
+              <a class="omgbtn omgrounded" onclick="toggleMenu('submenubtn2')">Link &raquo;</a>
+              <ul id="submenubtn2" style="display:none">
+                <li><a class="omgbtn">Submenu1</a></li>
+                <li><a class="omgbtn">Submenu2</a></li>
+              </ul>
+              <a class="omgbtn omgrounded omgactive">Link</a>
+              <a class="omgbtn omgrounded omgmain">Link</a>
+              <a class="omgbtn omgrounded omginfo">Link</a>
+              <a class="omgbtn omgrounded omgokay">Link</a>
+              <a class="omgbtn omgrounded omgwarn">Link</a>
+              <a class="omgbtn omgrounded omgerr">Link</a>
             </div>
           </div>
           <div>
             <div class="omgblock">
-              <a class="omgbtn disabled">Button</a>
-              <a class="omgbtn omgactive disabled">Button</a>
-              <a class="omgbtn omgmain disabled">Button</a>
-              <a class="omgbtn omginfo disabled">Button</a>
-              <a class="omgbtn omgokay disabled">Button</a>
-              <a class="omgbtn omgwarn disabled">Button</a>
-              <a class="omgbtn omgerr disabled">Button</a>
+              <a class="omgbtn disabled">Link &raquo;</a>
+              <a class="omgbtn omgactive disabled">Link</a>
+              <a class="omgbtn omgmain disabled">Link</a>
+              <a class="omgbtn omginfo disabled">Link</a>
+              <a class="omgbtn omgokay disabled">Link</a>
+              <a class="omgbtn omgwarn disabled">Dynamic Size Link</a>
+              <a class="omgbtn omgerr disabled">Link</a>
             </div>
             <div class="omgblock">
-              <a class="omgbtn omgrounded disabled">Button</a>
-              <a class="omgbtn omgrounded omgactive disabled">Button</a>
-              <a class="omgbtn omgrounded omgmain disabled">Button</a>
-              <a class="omgbtn omgrounded omginfo disabled">Button</a>
-              <a class="omgbtn omgrounded omgokay disabled">Button</a>
-              <a class="omgbtn omgrounded omgwarn disabled">Button</a>
-              <a class="omgbtn omgrounded omgerr disabled">Button</a>
+              <a class="omgbtn omgrounded disabled">Link &raquo;</a>
+              <a class="omgbtn omgrounded omgactive disabled">Link</a>
+              <a class="omgbtn omgrounded omgmain disabled">Link</a>
+              <a class="omgbtn omgrounded omginfo disabled">Link</a>
+              <a class="omgbtn omgrounded omgokay disabled">Link</a>
+              <a class="omgbtn omgrounded omgwarn disabled">Dynamic Size Link</a>
+              <a class="omgbtn omgrounded omgerr disabled">Link</a>
             </div>
           </div>
         </div>
