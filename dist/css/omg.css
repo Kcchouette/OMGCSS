@@ -50,18 +50,19 @@ footer{margin-top:3em;font-size:0.9em;padding-top:2em;border-top:1px solid #ccc;
 }
 
 /*submenu*/
-ul.omgsubmenu{display:none;position:absolute;width:160px!important;line-height:1.6em;padding-top:0.5em;padding-left:0.2em}
-ul.omgsubmenu>li>ul.omgsubmenu{padding-top:0.5em;padding-left:0.2em}
-.omgmenu.omginline>ul>li>ul.omgsubmenu{padding-top:0.5em;padding-left:0em}
-.omgmenubar>.omgmenu.omginline>ul>li>ul.omgsubmenu{padding-top:0.5em;padding-left:0.2em}
-.omgmenu.omginline>ul>li>ul.omgsubmenu>li>ul.omgsubmenu{padding-top:0.5em;padding-left:0.2em}
-ul.omgsubmenu>li {display:block;float:left;width:100%!important}
-ul.omgsubmenu>li>a {width:100%!important}
+.omgmenu ul li ul{display:none;position:absolute;width:160px!important;line-height:1.6em;padding-top:0.5em;padding-left:0.2em}
+.omgmenu ul li ul li ul{padding-top:0.5em;padding-left:0.2em}
+
+.omgmenu ul li ul{padding-top:0.5em;padding-left:0em}
+.omgmenubar .omgmenu.omginline ul li ul{padding-top:0.5em;padding-left:0.2em}
+.omgmenu.omginline ul li ul li ul{padding-top:0.5em;padding-left:0.2em}
+.omgmenu ul li ul li {display:block;float:left;width:100%!important}
+.omgmenu ul li ul li a {width:100%!important}
 
 @media only screen and (max-width:720px) {
-  ul.omgsubmenu{position:static;width:100%}
-  ul.omgsubmenu>li>a{margin-left: 0.8em;width:calc(100% - 0.8em)!important}
-  ul.omgsubmenu>li>ul.omgsubmenu>li>a{margin-left: 1.6em;width:calc(100% - 1.6em)!important}
+  .omgmenu ul li ul{position:static;width:100%}
+  .omgmenu ul li ul li a{margin-left: 0.8em;width:calc(100% - 0.8em)!important}
+  .omgmenu ul li ul li ul li a{margin-left: 1.6em;width:calc(100% - 1.6em)!important}
 }
 
 
