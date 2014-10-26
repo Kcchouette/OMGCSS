@@ -1,7 +1,6 @@
 # OMGCSS
 
-OMGCSS is an extremely lightweight css framework (6.8kB).
-![Size](size_proof.png)
+OMGCSS is an extremely lightweight css framework (9.1kB).
 
 However we try to focus on availability (support multi-devices) with responsive elements,
 functionalities with the most possible useful elements, and simplicity.
