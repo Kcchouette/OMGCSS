@@ -1,3 +1,5 @@
++ Make a dev version, not minified, with more comments
++ Make a dist version, minified
 + Add a scroll-to-top button, eventually with JS to display it only when scrolled down. Better have it in pure css3
 + Add a component like a vertical list of links and a correspondant page and when you scroll in the page, the style of the active link you're currently reading is changed. (will probably use js too)
 + Add a popup system for messages or forms in popup
