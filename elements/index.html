@@ -4,8 +4,8 @@
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <meta name="description" content="">
-    <meta name="author" content="">
+    <meta name="description" content="OMGCSS is an extremely lightweight css framework - Elements page is listing all ui elements available">
+    <meta name="author" content="fabienwang">
 
     <title>Elements for OMGCSS</title>
 
@@ -44,26 +44,26 @@
       <a name="menu"></a><h1 class="omglowerthat">Menu</h1>
 
       <div class="omgmenubar omgcontainer90">
-        <h1 class="omginline"><a href="#menu" class="omgtitle">Project name</a></h1>
-        <a href="#menu" onclick="toggleMenu('menu1')" class="menubtn">&#9776;</a>
+        <h1 class="omginline"><a class="omgtitle">Project name</a></h1>
+        <a onclick="toggleMenu('menu1')" class="menubtn">&#9776;</a>
         <nav id="menu1" class="omgmenu omginline" style="display:none">
           <ul>
             <li>
-              <a href="#menu" class="omgbtn" onclick="toggleMenu('submenu')">Home &raquo;</a>
+              <a class="omgbtn" onclick="toggleMenu('submenu')">Home &raquo;</a>
               <ul id="submenu" style="display:none">
-                <li><a href="#menu" class="omgbtn" onclick="toggleMenu('submenu1')">Submenu1 &raquo;</a>
+                <li><a class="omgbtn" onclick="toggleMenu('submenu1')">Submenu1 &raquo;</a>
                   <ul id="submenu1" style="display:none">
-                    <li><a href="#menu" class="omgbtn" onclick="toggleMenu('submenu2')">Submenu2 &raquo;</a>
+                    <li><a class="omgbtn" onclick="toggleMenu('submenu2')">Submenu2 &raquo;</a>
                       <ul id="submenu2" style="display:none">
-                        <li><a href="#menu" class="omgbtn">Submenu3</a></li>
+                        <li><a class="omgbtn">Submenu3</a></li>
                       </ul>
                     </li>
 
                   </ul>
                 </li>
-                <li><a href="#menu" class="omgbtn">Submenu4</a></li>
-                <li><a href="#menu" class="omgbtn">Submenu5</a></li>
-                <li><a href="#menu" class="omgbtn">Submenu6</a></li>
+                <li><a class="omgbtn">Submenu4</a></li>
+                <li><a class="omgbtn">Submenu5</a></li>
+                <li><a class="omgbtn">Submenu6</a></li>
               </ul>
             </li>
           </ul>
@@ -77,26 +77,26 @@
       <a name="inlinemenu"></a><h1 class="omglowerthat">Inline Menu</h1>
 
       <div class="omgcontainer90">
-        <h1 class="omginline"><a href="#inlinemenu" class="omgtitle">Project name</a></h1>
-        <a href="#inlinemenu" onclick="toggleMenu('menu2')" class="menubtn">&#9776;</a>
+        <h1 class="omginline"><a class="omgtitle">Project name</a></h1>
+        <a onclick="toggleMenu('menu2')" class="menubtn">&#9776;</a>
         <nav id="menu2" class="omgmenu omginline omgpullright" style="display:none">
           <ul>
-            <li><a href="#inlinemenu" class="omgbtn omgmain omgactive" onclick="toggleMenu('submenu3')">Home &raquo;</a>
+            <li><a class="omgbtn omgmain omgactive" onclick="toggleMenu('submenu3')">Home &raquo;</a>
               <ul id="submenu3" style="display:none">
-                <li><a href="#inlinemenu" class="omgbtn" onclick="toggleMenu('submenu4')">Submenu1 &raquo;</a>
+                <li><a class="omgbtn" onclick="toggleMenu('submenu4')">Submenu1 &raquo;</a>
                   <ul id="submenu4" style="display:none">
-                    <li><a href="#inlinemenu" class="omgbtn">Submenu2</a></li>
-                    <li><a href="#inlinemenu" class="omgbtn">Submenu3</a></li>
+                    <li><a class="omgbtn">Submenu2</a></li>
+                    <li><a class="omgbtn">Submenu3</a></li>
                   </ul>
                 </li>
-                <li><a href="#inlinemenu" class="omgbtn">Submenu4</a></li>
-                <li><a href="#inlinemenu" class="omgbtn">Submenu5</a></li>
-                <li><a href="#inlinemenu" class="omgbtn">Submenu6</a></li>
+                <li><a class="omgbtn">Submenu4</a></li>
+                <li><a class="omgbtn">Submenu5</a></li>
+                <li><a class="omgbtn">Submenu6</a></li>
               </ul>
             </li>
 
-            <li><a href="#inlinemenu" class="omgbtn">About</a></li>
-            <li><a href="#inlinemenu" class="omgbtn">Contact</a></li>
+            <li><a class="omgbtn">About</a></li>
+            <li><a class="omgbtn">Contact</a></li>
           </ul>
         </nav>
       </div>
@@ -166,7 +166,7 @@
         <div class="omghead omgcenter">
           <h1>Hello World, </h1>
           <p>This is a head.</p>
-          <a href="#head" class="omgbtn omgmain">More info »</a>
+          <a class="omgbtn omgmain">More info &raquo;</a>
         </div>
       </div>
 
@@ -176,9 +176,9 @@
 
         <div class="omgblock">
           <p>Normal text looks like this:</p>
-          <p>Lorem ipsum dolor sit amet, <a href="#typo"> this is a link</a> consectetur adipiscing elit. Donec a diam lectus. Sed sit amet ipsum mauris. Maecenas congue ligula ac quam viverra nec consectetur ante hendrerit.</p>
+          <p>Lorem ipsum dolor sit amet, <a>this is a link</a> consectetur adipiscing elit. Donec a diam lectus. Sed sit amet ipsum mauris. Maecenas congue ligula ac quam viverra nec consectetur ante hendrerit.</p>
           <p>Justified text like this:</p>
-          <p class="omgjustify">Donec et mollis dolor. <a href="#typo"> this is a link</a> Praesent et diam eget libero egestas mattis sit amet vitae augue. Nam tincidunt congue enim, ut porta lorem lacinia consectetur. Donec ut libero sed arcu vehicula ultricies a non tortor. Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+          <p class="omgjustify">Donec et mollis dolor. <a>this is a link</a> Praesent et diam eget libero egestas mattis sit amet vitae augue. Nam tincidunt congue enim, ut porta lorem lacinia consectetur. Donec ut libero sed arcu vehicula ultricies a non tortor. Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
         </div>
         <div class="omgblock omgcenter">
           <h1>H1 looks like this</h1>
@@ -310,7 +310,7 @@
           <label><input type="checkbox" name="check1" value="1"> Check me</label>
           <label><input type="radio" name="radio1" value="0"> Choose me</label>
           <label><input type="radio" name="radio1" value="1"> Choose me</label>
-          <a class="omgbtn" href="#forms">This is a button</a>
+          <a class="omgbtn">This is a button</a>
         </form>
       </div>
 
@@ -322,7 +322,7 @@
           <div class="inputgroup"><label><input type="checkbox" name="check2" value="1"> Check me</label></div>
           <div class="inputgroup"><label><input type="radio" name="radio1" value="0"> Choose me</label></div>
           <div class="inputgroup"><label><input type="radio" name="radio1" value="1"> Choose me</label></div>
-          <a class="omgbtn" href="#vertforms">This is a button</a>
+          <a class="omgbtn">This is a button</a>
         </form>
       </div>
 
